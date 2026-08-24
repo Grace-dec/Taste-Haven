@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taste Haven | Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--  NAVBAR  -->
+   <header class="navbar">
+
+    <div class="container nav-container">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+
+            <div class="logo-circle">
+                ♨
+            </div>
+
+            <div class="logo-text">
+                <h2>Taste Haven</h2>
+                <span>RESTAURANT</span>
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="#about">
+                About Us
+            </a>
+
+            <a href="#menu">
+                Menu
+            </a>
+
+            <a href="#specials">
+                Specials
+            </a>
+
+            <a href="#reservations">
+                Reservations
+            </a>
+
+            <!-- AUTH LINKS -->
+            <a href="login.html" class="nav-login">
+                Login
+            </a>
+
+            <a href="register.html" class="nav-signup">
+                Sign Up
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-actions">
+
+            <a href="cart.html" class="cart-btn" id="cartButton">
+    🛒
+    <span id="cartCount">0</span>
+</a>
+
+            <div class="hero-buttons">
+
+    <a href="menu.html" class="primary-btn">
+         Explore Menu
+    </a>
+
+        </div>
+         <!-- MOBILE MENU -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
+
+    </div>
+
+</header>
+
+
+    <!--HERO  -->
+    <section class="hero">
+
+        <!-- Put your hero image here -->
+        <div class="hero-image"></div>
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-container">
+
+            <div class="hero-content">
+
+                <p class="welcome-text">
+                    Welcome to Taste Haven
+                </p>
+
+                <h1>
+                    Good Food<br>
+                    <span>Great Moments</span>
+                </h1>
+
+                <div class="hero-line"></div>
+
+                <p class="hero-description">
+                    Indulge in delicious meals made with the freshest
+                    ingredients and a passion for perfection.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#reservations" class="primary-btn">
+                        Book a Table
+                    </a>
+
+                    <a href="#menu" class="secondary-btn">
+                         View Menu
+                    </a>
+
+                </div>
+
+                <div class="hero-features">
+
+                    <div class="hero-feature">
+                        <div>
+                            <strong>Fresh Ingredients</strong>
+                            <small>Daily & Local</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature">
+                        <div>
+                            <strong>Expert Chefs</strong>
+                            <small>Passion for Food</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-feature">
+                        <div>
+                            <strong>Made with Love</strong>
+                            <small>For You</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+        <div class="container about-container">
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <img src="image/IMG_7955.JPG" alt="about">
+                </div>
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    About Taste Haven
+                </p>
+
+                <h2>
+                    Where Every Meal<br>
+                    Becomes a Memory
+                </h2>
+
+                <p>
+                    At Taste Haven, we believe food is more than just a meal.
+                    It is an experience that brings people together.
+                </p>
+
+                <p>
+                    Our chefs combine fresh ingredients, traditional recipes
+                    and modern creativity to create delicious dishes that
+                    you'll want to come back for.
+                </p>
+
+                <a href="#" class="primary-btn">
+                    Discover More
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--  POPULAR DISHES  -->
+    <section class="menu section" id="menu">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Discover
+                </p>
+
+                <h2>
+                    Our Popular Dishes
+                </h2>
+
+                <div class="heading-line"></div>
+
+                <p>
+                    Delicious meals prepared with love by our expert chefs.
+                </p>
+
+            </div>
+
+
+           <!--  FOOD GRID  -->
+
+            <div class="food-grid" id="foodGrid">
+
+
+                <!-- FOOD 1 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+
+                        <img
+                            src="image/IMG_7967.JPG"
+                            alt="Grilled Chicken">
+
+                        <span class="popular">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                Grilled Chicken
+                            </h3>
+
+                            <span>
+                                $14.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Tender grilled chicken served with
+                            roasted vegetables and our special sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Grilled Chicken">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 2 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7919.JPG"
+                            alt="Creamy Alfredo Pasta">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                Creamy Alfredo Pasta
+                            </h3>
+
+                            <span>
+                                 $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Creamy pasta tossed with parmesan,
+                            herbs and our signature Alfredo sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Creamy Alfredo Pasta">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 3 -->
+
+                <article
+                    class="food-card"
+                    data-category="fastfood">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7910.JPG"
+                            alt="Haven Burger">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                Haven Burger
+                            </h3>
+
+                            <span>
+                               $6.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Juicy beef burger with fresh vegetables,
+                            cheese and our special Haven sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Haven Burger">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 4 -->
+
+                <article
+                    class="food-card"
+                    data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7970.JPG"
+                            alt="Chocolate Lava Cake">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                Chocolate Lava Cake
+                            </h3>
+
+                            <span>
+                                 $9.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Warm chocolate cake with a rich,
+                            melted chocolate center.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Chocolate Lava Cake">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--  SPECIALS  -->
+    <section class="specials section" id="specials">
+
+        <div class="container specials-container">
+
+            <div class="special-content">
+
+                <p class="section-label">
+                    Today's Special
+                </p>
+
+                <h2>
+                    Chef's Special<br>
+                    <span>Fried Rice  and
+                        Chicken </span>
+                </h2>
+
+                <p>
+                    Freshly grilled salmon served with roasted vegetables,
+                    herbs and our signature sauce.
+                </p>
+
+                <div class="special-price">
+                    $13.99
+                </div>
+
+                <button class="primary-btn">
+                    Order Now
+                </button>
+
+            </div>
+
+            <div class="special-image">
+                <div class="image-placeholder">
+                    <img src="image/IMG_7918.JPG" alt="Chicken">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--  FEATURES  -->
+    <section class="features">
+
+        <div class="container features-grid">
+
+            <div class="feature-box">
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick & reliable delivery</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div>
+                    <h3>Best Quality</h3>
+                    <p>Fresh ingredients every day</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>Safe payment options</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>We're here to help anytime</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESERVATION  -->
+    <section class="reservation section" id="reservations">
+
+        <div class="container reservation-container">
+
+            <div>
+                <p class="section-label">
+                    Reservations
+                </p>
+
+                <h2>
+                    Reserve Your Table
+                </h2>
+
+                <p>
+                    Planning a special dinner? Reserve your table with us
+                    and enjoy an unforgettable dining experience.
+                </p>
+            </div>
+
+            <form class="reservation-form" id="reservationForm">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="date"
+                    required
+                >
+
+                <input
+                    type="time"
+                    required
+                >
+
+                <select required>
+                    <option value="">Guests</option>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5+ Guests</option>
+                </select>
+
+                <button type="submit" class="primary-btn">
+                    Reserve Table
+                </button>
+
+                <p id="reservationMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER  -->
+    <footer id="contact">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <h2>Taste Haven</h2>
+
+                <p>
+                    Good food. Great moments.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservations">Reservations</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Your Restaurant Address</p>
+                <p> +237 XXX XXX XXX</p>
+                <p>
+                     hello@tastehaven.com</p>
+            </div>  
+            <a href="login.html"></a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Taste Haven Restaurant. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

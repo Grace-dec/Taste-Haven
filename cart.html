@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Taste Haven | Your Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-circle">
+                ♨
+            </div>
+
+            <div class="logo-text">
+
+                <h2>
+                    Taste Haven
+                </h2>
+
+                <span>
+                    RESTAURANT
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#about">
+                About Us
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="index.html#specials">
+                Specials
+            </a>
+
+            <a href="index.html#reservations">
+                Reservations
+            </a>
+
+            <a href="login.html" class="nav-login">
+                Login
+            </a>
+
+            <a
+                href="registration.html"
+                class="nav-signup">
+
+                Sign Up
+
+            </a>
+
+        </nav>
+
+
+        <!-- NAV ACTIONS -->
+
+        <div class="nav-actions">
+
+            <a href="cart.html"
+               class="cart-btn active-cart">
+
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </a>
+
+
+            <a
+                href="index.html#reservations"
+                class="book-btn">
+
+                Book a Table
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!--  CART HERO -->
+
+<section class="cart-hero">
+
+    <div class="container cart-hero-content">
+
+        <p>
+            Taste Haven
+        </p>
+
+        <h1>
+            Your Cart
+        </h1>
+
+        <span class="hero-line"></span>
+
+        <p>
+            Review your order before checkout.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!--   CART SECTION -->
+
+<main class="cart-section">
+
+    <div class="container">
+
+
+        <!-- PAGE TITLE -->
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                Your Order
+            </p>
+
+            <h2>
+                Review Your Items
+            </h2>
+
+        </div>
+
+
+
+        <!-- CART LAYOUT -->
+
+        <div class="cart-layout">
+
+
+            <!--  CART ITEMS -->
+
+            <div class="cart-items-container">
+
+
+                <!-- CART HEADER -->
+
+                <div class="cart-items-header">
+
+                    <span>
+                        Item
+                    </span>
+
+                    <span>
+                        Price
+                    </span>
+
+                    <span>
+                        Quantity
+                    </span>
+
+                    <span>
+                        Total
+                    </span>
+
+                </div>
+
+
+                <!-- ITEMS WILL BE CREATED BY JAVASCRIPT -->
+
+                <div
+                    class="cart-items"
+                    id="cartItems">
+
+                </div>
+
+
+                <!-- EMPTY CART -->
+
+                <div
+                    class="empty-cart"
+                    id="emptyCart">
+
+                    <div class="empty-cart-icon">
+                        🛒
+                    </div>
+
+                    <h3>
+                        Your cart is empty
+                    </h3>
+
+                    <p>
+                        Looks like you haven't added
+                        anything to your cart yet.
+                    </p>
+
+                    <a
+                        href="menu.html"
+                        class="primary-btn">
+
+                        Explore Menu
+
+                    </a>
+
+                </div>
+
+
+                <!-- CONTINUE SHOPPING -->
+
+                <a
+                    href="menu.html"
+                    class="continue-shopping">
+
+                    ← Continue Shopping
+
+                </a>
+
+            </div>
+
+
+
+            <!--   ORDER SUMMARY -->
+
+            <aside class="order-summary">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong id="subtotal">
+                        0000
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-line">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <strong id="delivery">
+                        000
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-line discount">
+
+                    <span>
+                        Discount
+                    </span>
+
+                    <strong id="discount">
+                        -0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-divider"></div>
+
+
+                <div class="summary-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="total">
+                        0.00
+                    </strong>
+
+                </div>
+
+
+                <!-- PROMO CODE -->
+
+                <div class="promo">
+
+                    <label for="promoCode">
+                        Have a promo code?
+                    </label>
+
+                    <div class="promo-input">
+
+                        <input
+                            type="text"
+                            id="promoCode"
+                            placeholder="Enter code">
+
+                        <button
+                            type="button"
+                            id="applyPromo">
+
+                            Apply
+
+                        </button>
+
+                    </div>
+
+                    <small id="promoMessage"></small>
+
+                </div>
+
+
+                <!-- CHECKOUT -->
+
+                <button
+                    class="checkout-btn"
+                    id="checkoutBtn">
+
+                    Proceed to Checkout
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <div class="secure-payment">
+
+                    
+
+                    <span>
+                        Secure checkout
+                    </span>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<!--   FOOTER -->
+
+<footer>
+
+    <div class="container footer-container">
+
+
+        <div class="footer-brand">
+
+            <h2>
+                Taste Haven
+            </h2>
+
+            <p>
+                Good food. Great moments.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#about">
+                About Us
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="index.html#reservations">
+                Reservations
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                Your Restaurant Address
+            </p>
+
+            <p>
+                 +237 XXX XXX XXX
+            </p>
+
+            <p>
+                ✉ hello@tastehaven.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Taste Haven Restaurant.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="./js/cart.js"></script>
+
+</body>
+
+</html>

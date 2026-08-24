@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taste Haven | Menu</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <!--  NAVIGATION  -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+
+                <div class="logo-circle">
+                    ♨
+                </div>
+
+                <div class="logo-text">
+                    <h2>Taste Haven</h2>
+                    <span>RESTAURANT</span>
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <nav class="nav-links" id="navLinks">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+                <a href="menu.html" class="active">
+                    Menu
+                </a>
+
+                <a href="index.html#specials">
+                    Specials
+                </a>
+
+                <a href="index.html#reservations">
+                    Reservations
+                </a>
+
+                <a href="login.html" class="nav-login">
+                    Login
+                </a>
+
+                <a href="registration.html" class="nav-signup">
+                    Sign Up
+                </a>
+
+            </nav>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <button class="cart-btn" id="cartButton">
+
+                    🛒
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+
+                <a href="index.html#reservations" class="book-btn">
+                    Book a Table
+                </a>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open menu">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MENU HERO  -->
+
+    <section class="menu-hero">
+
+        <div class="menu-hero-overlay"></div>
+
+        <div class="container menu-hero-content">
+
+            <p>
+                Taste Haven
+            </p>
+
+            <h1>
+                Our Menu
+            </h1>
+
+            <span class="hero-line"></span>
+
+            <p class="hero-description">
+                Delicious meals, carefully prepared with fresh
+                ingredients and served with love.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MENU  -->
+
+    <main class="menu-section">
+
+        <div class="container">
+
+
+            <!-- MENU HEADER -->
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    Explore Our Menu
+                </p>
+
+                <h2>
+                    Choose Your Favorite
+                </h2>
+
+                <p>
+                    From delicious main courses to refreshing drinks
+                    and irresistible desserts.
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY FILTER  -->
+
+            <div class="category-buttons">
+
+                <button
+                    class="category-btn active"
+                    data-category="all">
+
+                    All
+
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="breakfast">
+
+                    Breakfast
+
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="main">
+
+                    Main dishes
+
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="fastfood">
+
+                    Fast Food
+
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="salad">
+
+                    Salads
+
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="drinks">
+
+                    Drinks
+
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="dessert">
+
+                    Desserts
+
+                </button>
+            </div>
+
+
+
+            <!--  FOOD GRID  -->
+
+            <div class="food-grid" id="foodGrid">
+
+
+                <!-- FOOD 1 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+                  
+
+                        <img
+                            src="image/IMG_7967.JPG"
+                            alt="Grilled Chicken">
+
+                        <span class="popular">
+                            Popular
+                        </span>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               GRILLED CHICKEN
+                            </h3>
+
+                            <span>
+                                 $14.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Tender, juicy chicken seasoned with aromatic herbs and
+                             perfectly grilled for a smoky finish..
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Grilled Chicken">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                 <!-- FOOD 1.2 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+                     
+
+                        <img
+                            src="image/IMG_8017.JPG"
+                            alt="Alfredo Pasta">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                ALFREDO PASTA
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Creamy pasta tossed in a rich Alfredo sauce, 
+                            finished with herbs and tender pieces of chicken.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Grilled Chicken">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 1.3 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+                    ->
+
+                        <img
+                            src="image/IMG_8019.JPG"
+                            alt="JOLLOF RICE & CHICKEN">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                JOLLOF RICE & CHICKEN
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Flavorful West African-style jollof rice served 
+                            with perfectly seasoned, juicy chicken..
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Creamy Alfredo Pasta">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                 <!-- FOOD 1.4 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+                     
+
+                        <img
+                            src="image/IMG_8021.JPG"
+                            alt="GRILLED FISH">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                GRILLED FISH
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Fresh fish delicately seasoned and grilled
+                             to perfection, served with flavorful sides.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Creamy Alfredo Pasta">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                 <!-- FOOD 1.5 -->
+
+                <article
+                    class="food-card"
+                    data-category="main">
+
+                    <div class="food-image">
+
+                   
+
+                        <img
+                            src="image/IMG_8023.JPG"
+                            alt="BEEF STEAK">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                BEEF STEAK
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A tender, well-seasoned steak grilled to
+                             your preferred doneness and served with delicious sides.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Creamy Alfredo Pasta">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 2 -->
+
+                <article
+                    class="food-card"
+                    data-category="fastfood">
+
+                    <div class="food-image">
+
+                     
+
+                        <img
+                            src="image/IMG_7910.JPG"
+                            alt="Haven Burger">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               HAVEN BURGER
+                            </h3>
+
+                            <span>
+                                $6.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Juicy beef burger with fresh vegetables,
+                            cheese and our special Haven sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Haven Burger">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 2.1 -->
+
+                <article
+                    class="food-card"
+                    data-category="fastfood">
+
+                    <div class="food-image">
+
+                   
+
+                        <img
+                            src="image/IMG_8027.JPG"
+                            alt=" CHICKEN WINGS">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                CHICKEN WINGS
+                            </h3>
+
+                            <span>
+                                $6.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Crispy, golden chicken wings coated in
+                             a flavorful sauce for the perfect bite.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Haven Burger">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 2.3 -->
+
+                <article
+                    class="food-card"
+                    data-category="fastfood">
+
+                    <div class="food-image">
+
+                   
+
+                        <img
+                            src="image/IMG_7966.JPG"
+                            alt=" HAVEN PIZZA">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                HAVEN PIZZA
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A freshly baked pizza topped with rich tomato sauce,
+                             melted cheese, and delicious savory toppings.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Haven Burger">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 2.4 -->
+
+                <article
+                    class="food-card"
+                    data-category="fastfood">
+
+                    <div class="food-image">
+
+                  
+
+                        <img
+                            src="image/IMG_8029.JPG"
+                            alt="FRENCH FRIES AND GRILLED CHICKEN">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               FRENCH FRIES AND GRILLED CHICKEN
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Crispy golden fries with a soft,
+                             fluffy center, lightly seasoned and served hot.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Haven Burger">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 2.4 -->
+
+                <article
+                    class="food-card"
+                    data-category="fastfood">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7909.JPG"
+                            alt="SHAWARMA">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                SHAWARMA
+                            </h3>
+
+                            <span>
+                                $6.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Tender seasoned chicken wrapped with 
+                            fresh vegetables, creamy sauce, and warm flatbread.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Haven Burger">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+
+
+                <!-- FOOD 4 -->
+
+                <article
+                    class="food-card"
+                    data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7970.JPG"
+                            alt="Chocolate Lava Cake">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                CHOCOLATE LAVA CAKE
+                            </h3>
+
+                            <span>
+                                $9.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Warm chocolate cake with a rich,
+                            melted chocolate center.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Chocolate Lava Cake">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 4.1 -->
+
+                <article
+                    class="food-card"
+                    data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7988.JPG"
+                            alt="VANILLA CHEESCAKE">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               VANILLA CHEESCAKE
+                            </h3>
+
+                            <span>
+                                $9.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Smooth and creamy vanilla cheesecake 
+                            with a delicate, buttery crust
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Chocolate Lava Cake">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- FOOD 4.2 -->
+
+                <article
+                    class="food-card"
+                    data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8046.JPG"
+                            alt="ICE CREAM">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               ICE CREAM
+                            </h3>
+
+                            <span>
+                                $9.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Creamy, refreshing ice cream available 
+                            in delicious flavors to satisfy your sweet tooth.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Chocolate Lava Cake">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- FOOD 4.3 -->
+
+                <article
+                    class="food-card"
+                    data-category="dessert">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8037.JPG"
+                            alt="FRUIT SALAD">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                FRUIT SALAD
+                            </h3>
+
+                            <span>
+                                $9.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A colorful mix of fresh, juicy seasonal fruits
+                             for a naturally sweet and refreshing finish.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Chocolate Lava Cake">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+
+
+                <!-- FOOD 5 -->
+
+                <article
+                    class="food-card"
+                    data-category="breakfast">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7974.JPG"
+                            alt="Haven Breakfast">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                HAVEN BREAKFAST
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Eggs, crispy bacon, toast and fresh
+                            vegetables served with a hot drink.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Haven Breakfast">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 5.1 -->
+
+                <article
+                    class="food-card"
+                    data-category="breakfast">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7998.JPG"
+                            alt="PANCAKES">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               PANCAKES
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                           Fluffy golden pancakes served with a 
+                           drizzle of syrup and delicious toppings.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Haven Breakfast">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 5.2 -->
+
+                <article
+                    class="food-card"
+                    data-category="breakfast">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8001.JPG"
+                            alt="OMELETTE">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                OMELETTE
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A perfectly folded omelette filled with fresh vegetables,
+                             cheese, and your choice of savory ingredients.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Haven Breakfast">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 5.3 -->
+
+                <article
+                    class="food-card"
+                    data-category="breakfast">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8011.JPG"
+                            alt="FRENCH TOAST">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                FRENCH TOAST
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Thick slices of golden-browned bread, 
+                            delicately spiced and served with syrup and fresh fruit.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Haven Breakfast">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 5.4 -->
+
+                <article
+                    class="food-card"
+                    data-category="breakfast">
+
+                    <div class="food-image">
+                        <img
+                            src="image/IMG_8010.JPG"
+                            alt="BREAKFAST SANDWICH">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                BREAKFAST SANDWICH
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            EA warm, satisfying sandwich filled with
+                             fluffy eggs, cheese, and savory breakfast favorites.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Haven Breakfast">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FOOD 6 -->
+
+                <article
+                    class="food-card"
+                    data-category="salad">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8032.JPG"
+                            alt="CAESAR SALAD">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                CAESAR SALAD
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Crisp lettuce tossed in creamy Caesar dressing, 
+                            topped with crunchy croutons and parmesan cheese.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Garden Salad">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FOOD 6.1 -->
+
+                <article
+                    class="food-card"
+                    data-category="salad">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8033.JPG"
+                            alt="CHICKEN AVOCADO SALAD">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                CHICKEN AVOCADO SALAD
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Tender grilled chicken combined with creamy avocado,
+                             fresh greens, tomatoes, and a light dressing.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Garden Salad">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- FOOD 6.2 -->
+
+                <article
+                    class="food-card"
+                    data-category="salad">
+
+                    <div class="food-image">
+
+
+                        <img
+                            src="image/IMG_7979.JPG"
+                            alt="Fresh Garden Salad">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                FRESH GARDEN SALAD
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Fresh lettuce, tomatoes, cucumber,
+                            avocado and our house dressing.
+                        </p>
+
+                        <div class="food-bottom">
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Garden Salad">
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+
+                <!-- FOOD 7 -->
+
+                <article
+                    class="food-card"
+                    data-category="drinks">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_7975.JPG"
+                            alt="Fresh Fruit Juice">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                FRESH FRUIT JUICE
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Naturally refreshing juice made from 
+                            freshly selected fruits for a vibrant burst of flavor.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Fruit Juice">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                  <!-- FOOD 7.2 -->
+
+                <article
+                    class="food-card"
+                    data-category="drinks">
+
+                    <div class="food-image">
+                        <img
+                            src="image/IMG_8039.JPG"
+                            alt="SMOTHIES">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                SMOTHIES
+                            </h3>
+
+                            <span>
+                                $13.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A creamy blend of fresh fruits, 
+                            creating a deliciously smooth and refreshing drink.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Fruit Juice">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                  <!-- FOOD 7.2 -->
+
+                <article
+                    class="food-card"
+                    data-category="drinks">
+
+                    <div class="food-image">
+
+                        <img
+                            src="image/IMG_8048.JPG"
+                            alt="SOFT DRINKS">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                SOFT DRINKS
+                            </h3>
+
+                            <span>
+                                $2.99 
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Chilled and refreshing carbonated drinks, 
+                            perfect alongside any meal.
+                            
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Fruit Juice">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                  <!-- FOOD 7.3 -->
+
+                <article
+                    class="food-card"
+                    data-category="drinks">
+
+                    <div class="food-image">
+                        <img
+                            src="image/IMG_8050.JPG"
+                            alt=" COFFEE">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                               COFFEE
+                            </h3>
+
+                            <span>
+                                $2.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Rich, aromaic coffee freshly prepared to 
+                            give you the perfect boost.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Fruit Juice">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                  <!-- FOOD 7.4 -->
+
+                <article
+                    class="food-card"
+                    data-category="drinks">
+
+                    <div class="food-image">
+
+                  
+
+                        <img
+                            src="image/IMG_8054.JPG"
+                            alt="TEA">
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+
+                            <h3>
+                                TEA
+                            </h3>
+
+                            <span>
+                                $2.99
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A warm and comforting selection of carefully
+                            brewed tea, perfect for any time of day.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <button
+                                class="add-cart"
+                                data-name="Fresh Fruit Juice">
+
+                                 Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="menu-cta">
+
+        <div class="container">
+
+            <h2>
+                Ready for a Great Meal?
+            </h2>
+
+            <p>
+                Reserve your table today and enjoy
+                an unforgettable Taste Haven experience.
+            </p>
+
+            <a
+                href="index.html#reservations"
+                class="primary-btn">
+
+                Reserve a Table
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <h2>
+                    Taste Haven
+                </h2>
+
+                <p>
+                    Good food. Great moments.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About Us
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="index.html#reservations">
+                    Reservations
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                     Your Restaurant Address
+                </p>
+
+                <p>
+                     +237 XXX XXX XXX
+                </p>
+
+                <p>
+                    hello@tastehaven.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Taste Haven Restaurant.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

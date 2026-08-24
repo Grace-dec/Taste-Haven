@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taste Haven — Welcome Back</title>
+<link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- LOGIN CARD -->
+  <div class="card">
+    <div class="brand">
+      <div class="brand-icon">🍴</div>
+      <div class="brand-name">Taste Haven</div>
+      <div class="brand-sub">
+        <span class="line"></span>RESTAURANT<span class="line"></span>
+      </div>
+    </div>
+
+    <h2 class="welcome">Welcome Back!</h2>
+    <p class="subtitle">Login to continue to your account</p>
+
+    <form id="login-form" novalidate>
+
+      <div class="field" id="field-email">
+        <label for="email">Email Address</label>
+        <div class="input-wrap">
+          <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+        </div>
+        <div class="error-msg">Please enter a valid email address.</div>
+      </div>
+
+      <div class="field" id="field-password">
+        <label for="password">Password</label>
+        <div class="input-wrap has-toggle">
+          <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password">
+          <button type="button" class="toggle-visibility" data-target="password">👁️</button>
+        </div>
+        <div class="error-msg">Please enter your password.</div>
+      </div>
+
+      <div class="row-between">
+        <label class="remember">
+          <input type="checkbox" id="remember" checked>
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot" onclick="return false;">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Login</button>
+    </form>
+
+    <div class="or-divider">OR</div>
+
+    <button type="button" class="google-btn" id="googleBtn">
+      <svg viewBox="0 0 48 48">
+        <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.6 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.7-.4-3.5z"/>
+        <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.7 18.9 13 24 13c3.1 0 5.9 1.2 8 3.1l5.7-5.7C34.5 6.1 29.5 4 24 4c-7.7 0-14.4 4.3-17.7 10.7z"/>
+        <path fill="#4CAF50" d="M24 44c5.4 0 10.3-2.1 14-5.5l-6.5-5.4C29.4 34.9 26.8 36 24 36c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1C9.5 39.5 16.2 44 24 44z"/>
+        <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.3-2.3 4.3-4.3 5.7l6.5 5.4C40.5 36.5 44 30.9 44 24c0-1.3-.1-2.7-.4-3.5z"/>
+      </svg>
+      Continue with Google
+    </button>
+
+    <p class="signup-line">Don't have an account? <a href="register.html">Create Account</a></p>
+  </div>
+
+</div>
+
+<script src="./js/login.js"></script>
+</body>
+</html>

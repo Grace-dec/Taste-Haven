@@ -1,0 +1,312 @@
+:root{
+  --orange:#e8791a;
+  --orange-dark:#d96c10;
+  --cream:#faf0e4;
+  --text-dark:#2a2118;
+  --text-muted:#8a8078;
+  --border:#e7ddd1;
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+
+html, body{ height:100%; }
+
+body{
+  font-family:'Poppins', sans-serif;
+  color:var(--text-dark);
+}
+
+.page{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  background:var(--cream);
+}
+
+/* subtle food-icon pattern on the cream background */
+.page::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  opacity:0.35;
+  background-image:
+    radial-gradient(circle at 10% 10%, transparent 40px, transparent 40px),
+    repeating-linear-gradient(45deg, rgba(232,121,26,0.05) 0, rgba(232,121,26,0.05) 2px, transparent 2px, transparent 40px);
+}
+
+/*  LOGIN CARD - */
+.card{
+  position:relative;
+  z-index:3;
+  margin:auto;
+  margin-left:500px;
+  width:100%;
+  max-width:490px;
+  background:#fff;
+  border-radius:26px;
+  box-shadow:0 30px 70px rgba(20,12,5,0.18);
+  padding:44px 48px 40px;
+}
+
+.brand{
+  text-align:center;
+  margin-bottom:26px;
+}
+
+.brand-icon{
+  width:70px; height:70px;
+  border-radius:50%;
+  background:#2a2118;
+  color:var(--orange);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  margin:0 auto 14px;
+}
+
+.brand-name{
+  font-family:'Playfair Display', serif;
+  font-size:26px;
+  font-weight:700;
+  color:var(--text-dark);
+}
+
+.brand-sub{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-size:11px;
+  letter-spacing:3px;
+  color:var(--orange);
+  font-weight:600;
+  margin-top:6px;
+}
+
+.brand-sub .line{
+  width:26px;
+  height:1px;
+  background:var(--orange);
+  display:inline-block;
+}
+
+.welcome{
+  font-family:'Playfair Display', serif;
+  font-size:26px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.subtitle{
+  font-size:13.5px;
+  color:var(--text-muted);
+  margin-bottom:26px;
+}
+
+form{ display:flex; flex-direction:column; gap:18px; }
+
+.field label{
+  display:block;
+  font-size:13.5px;
+  font-weight:600;
+  margin-bottom:7px;
+  color:var(--text-dark);
+}
+
+.input-wrap{
+  position:relative;
+  display:flex;
+  align-items:center;
+}
+
+.input-wrap .icon{
+  position:absolute;
+  left:16px;
+  color:#a89c8d;
+  font-size:15px;
+  pointer-events:none;
+  display:flex;
+}
+
+.input-wrap input{
+  width:100%;
+  padding:13px 16px 13px 46px;
+  border:1.5px solid var(--border);
+  border-radius:10px;
+  font-family:'Poppins', sans-serif;
+  font-size:13.5px;
+  background:#fffdfb;
+  color:var(--text-dark);
+  outline:none;
+  transition:border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-wrap input::placeholder{ color:#b3a89a; }
+
+.input-wrap input:focus{
+  border-color:var(--orange);
+  box-shadow:0 0 0 3px rgba(232,121,26,0.15);
+}
+
+.input-wrap.has-toggle input{ padding-right:44px; }
+
+.toggle-visibility{
+  position:absolute;
+  right:16px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:#a89c8d;
+  font-size:15px;
+  display:flex;
+  padding:0;
+}
+.toggle-visibility:hover{ color:var(--orange); }
+
+.field.error input{ border-color:#d64545; }
+.field .error-msg{
+  display:none;
+  color:#d64545;
+  font-size:11.5px;
+  margin-top:5px;
+}
+.field.error .error-msg{ display:block; }
+
+.row-between{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:-4px;
+}
+
+.remember{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  color:var(--text-dark);
+  user-select:none;
+}
+
+.remember input{
+  appearance:none;
+  -webkit-appearance:none;
+  width:18px; height:18px;
+  border-radius:5px;
+  background:var(--orange);
+  border:1.5px solid var(--orange);
+  flex-shrink:0;
+  cursor:pointer;
+  position:relative;
+}
+
+.remember input:checked::after{
+  content:"✓";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:11px;
+  font-weight:700;
+}
+
+.forgot{
+  font-size:13px;
+  color:var(--orange);
+  font-weight:600;
+  text-decoration:none;
+}
+.forgot:hover{ text-decoration:underline; }
+
+.submit-btn{
+  background:linear-gradient(180deg, var(--orange), var(--orange-dark));
+  color:#fff;
+  border:none;
+  padding:15px;
+  border-radius:10px;
+  font-family:'Poppins', sans-serif;
+  font-size:15px;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+  box-shadow:0 10px 20px rgba(232,121,26,0.28);
+}
+
+.submit-btn:hover{ transform:translateY(-1px); box-shadow:0 14px 24px rgba(232,121,26,0.35); }
+.submit-btn:active{ transform:translateY(0); }
+.submit-btn:disabled{ opacity:0.55; cursor:not-allowed; transform:none; box-shadow:none; }
+
+.or-divider{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:22px 0;
+  color:var(--text-muted);
+  font-size:12px;
+  font-weight:600;
+}
+.or-divider::before, .or-divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:var(--border);
+}
+
+.google-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  background:#fff;
+  border:1.5px solid var(--border);
+  padding:13px;
+  border-radius:10px;
+  font-family:'Poppins', sans-serif;
+  font-size:14px;
+  font-weight:600;
+  color:var(--text-dark);
+  cursor:pointer;
+  transition:background 0.15s, border-color 0.15s;
+}
+.google-btn:hover{ background:#faf6f0; border-color:#d8cbb8; }
+.google-btn svg{ width:18px; height:18px; }
+
+.signup-line{
+  text-align:center;
+  font-size:13.5px;
+  color:var(--text-dark);
+  margin-top:22px;
+}
+.signup-line a{
+  color:var(--orange);
+  font-weight:600;
+  text-decoration:none;
+}
+.signup-line a:hover{ text-decoration:underline; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 860px){
+  .page{ flex-direction:column; }
+  .left{
+    flex:none;
+    min-width:0;
+    height:260px;
+    clip-path:none;
+    border-radius:0 0 40px 40px;
+  }
+  .left-content{ padding:40px 30px 0; }
+  .tagline{ font-size:26px; }
+  .card{
+    margin:-40px auto 30px;
+    max-width:92%;
+    padding:34px 26px 30px;
+  }
+}
